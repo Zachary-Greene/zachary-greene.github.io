@@ -24,7 +24,6 @@
 
 .glide__slide img{
     max-height: 250px;
-    width: auto;
 }
 
 .glide__slides{
@@ -45,6 +44,12 @@
   background-size: contain;
 }
 
+.navbar-title{
+    font-size: x-large;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
 .menu-toggler{
   background: none;
   width: 30px;
@@ -60,14 +65,14 @@
 .menu-toggler span{
   display: block;
   height: 3px;
-  background-color: #fff;
+  background-color: #f1f1f1;
   margin: 6px 0;
   position: relative;
   transition: .3s linear;
 }
 
 .navbar-menu a{
-  color: #fff;
+  color: #f1f1f1;
   font-size: 15px;
   font-weight: 500;
   margin-left: 30px;
@@ -87,12 +92,16 @@
   background-image: url(../images/black-logo.png);
 }
 
+.sticky .navbar-title{
+    color: #000000;
+}
+
 .sticky .navbar-menu a{
-  color: #111;
+  color: #000000;
 }
 
 .sticky .menu-toggler span{
-  background-color: #111;
+  background-color: #000000;
 }
 
 #home{
@@ -113,7 +122,7 @@
 
 #home .content{
   width: 100%;
-  color: #fff;
+  color: #000000;
 }
 
 #home .content h1{
@@ -129,7 +138,7 @@
 #projects-page{
     height: 80vh;
     min-height: 500px;
-    background: url(../images/bg.jpg) no-repeat center;
+    background: url(../images/bg.jpg) center;
     background-size: cover;
     background-attachment: fixed;
   }
@@ -185,7 +194,7 @@
 }
 
 .sm a{
-  color: #fff;
+  color: #000000;
   font-size: 22px;
   margin: 0 10px;
   transition: .2s linear;
@@ -202,7 +211,8 @@
 #home .buttons a{
   display: inline-block;
   margin: 15px 30px;
-  color: #952ec5;
+  color: #f1f1f1;
+  background-color: #952ec5;
   font-size: 15px;
   font-weight: 500;
   width: 180px;
@@ -210,13 +220,6 @@
   padding: 14px 0;
   border-radius: 6px;
   transition: .2s linear;
-}
-
-#home .buttons a:hover,
-#home .buttons a:nth-child(2)
-{
-  background-color: #952ec5;
-  color: #fff;
 }
 
 section{
@@ -271,12 +274,6 @@ section{
   flex-wrap: wrap;
 }
 
-.about-pic{
-  width: 200px;
-  border-radius: 50%;
-  margin-right: 100px;
-}
-
 .about-text{
   flex: 1;
 }
@@ -285,6 +282,7 @@ section{
   margin: 10px 0;
   color: #444;
   font-size: 16px;
+  text-align: center;
 }
 
 .about-text h3 span:nth-child(1):after,
@@ -300,9 +298,11 @@ section{
 
 .about-text p{
   font-size: 17px;
-  text-align: justify;
   line-height: 26px;
   margin-top: 20px;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 section.dark{
@@ -527,7 +527,7 @@ section.dark .section-title::after{
 
 footer{
   background: url(../images/bg.jpg) no-repeat center;
-  color: #fff;
+  color: #000000;
   padding: 80px 0;
   text-align: center;
 }
@@ -590,10 +590,6 @@ footer{
 
   .inner-width{
     max-width: 800px;
-  }
-
-  .about-pic{
-    margin: 0 auto 60px;
   }
 
   .about-text{
