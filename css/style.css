@@ -104,7 +104,7 @@
   height: 100vh;
   min-height: 500px;
   background: url(/images/bg.jpg) no-repeat center;
-  background-size: cover;
+  background-size: 100%;
   background-attachment: fixed;
 }
 
