@@ -107,6 +107,10 @@
   background-size: cover;
   background-attachment: fixed;
   image-rendering: optimizeSpeed;
+  
+  @media (max-width: @iphone-screen){
+      background-attachment: scroll;
+  }
 }
 
 #home .inner-width{
