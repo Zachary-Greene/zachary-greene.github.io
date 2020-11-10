@@ -106,6 +106,7 @@
   background: url(/images/bg.jpg) no-repeat center fixed;
   background-size: cover;
   background-attachment: fixed;
+  image-rendering: optimizeSpeed;
 }
 
 #home .inner-width{
