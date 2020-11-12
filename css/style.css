@@ -103,7 +103,7 @@
 #home{
   height: 100vh;
   min-height: 500px;
-  background: url(/images/bg.jpg) no-repeat center;
+  background: url(../images/bg.jpg) no-repeat center;
   background-size: cover;
   background-attachment: scroll;
   image-rendering: optimizeSpeed;
@@ -189,7 +189,7 @@
 }
 
 #projects-body{
-    height: 100vh;
+    height: 120vh;
     min-height: 500px;
 }
 
@@ -213,6 +213,12 @@
     font-size: 17px;
     max-width: 700px;
     padding: 20px 0;
+}
+
+#projects-body iframe{
+    display: block;
+    margin: auto;
+    padding: 20px;
 }
 
 .row {
@@ -530,7 +536,7 @@ footer{
   color: #ffffff;
   padding: 80px 0;
   text-align: center;
-  margin-top: auto;
+  position: static;
 }
 
 .sm a{
