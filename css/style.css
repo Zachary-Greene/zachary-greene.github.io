@@ -144,7 +144,7 @@
     }
 }
 
-#projects-home{
+#r2-home{
     height: 100vh;
     min-height: 500px;
     background: url(/images/Projects-R2D2/R2D2-Render.png) no-repeat center;
@@ -152,7 +152,7 @@
     background-attachment: scroll;
 }
   
-#projects-home .inner-width{
+#r2-home .inner-width{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -160,21 +160,21 @@
     text-align: center;
 }
   
-#projects-home .content{
+#r2-home .content{
     width: 100%;
-    color: #fff;
+    color: #ffffff;
 }
 
-#projects-home .content h1{
+#r2-home .content h1{
     font-size: 60px;
     margin-bottom: 60px;
 }
 
-#projects-home .buttons{
+#r2-home .buttons{
     margin-top: 60px;
 }
   
-#projects-home .buttons a{
+#r2-home .buttons a{
     display: inline-block;
     margin: 15px 30px;
     color: #f1f1f1;
@@ -188,12 +188,12 @@
     transition: .2s linear;
 }
 
-#projects-body{
+#r2-body{
     height: 140vh;
     min-height: 500px;
 }
 
-#projects-body .inner-width{
+#r2-body .inner-width{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -201,13 +201,13 @@
     text-align: center;
 }
 
-#projects-body h2{
+#r2-body h2{
     text-align: center;
     text-decoration: underline #6a0dad;
     font-size: 30px;
 }
 
-#projects-body p{
+#r2-body p{
     text-align: center;
     margin: auto;
     font-size: 17px;
@@ -231,6 +231,148 @@
     right: 0;
     width: 100%;
     height: 100%;
+}
+
+#calc-home{
+    height: 100vh;
+    min-height: 500px;
+    background: url(/images/Projects-Calc/GUI-Calc.png) no-repeat center;
+    background-size: cover;
+    background-attachment: scroll;
+}
+  
+#calc-home .inner-width{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+  
+#calc-home .content{
+    width: 100%;
+    color: #fff;
+}
+
+#calc-home .content h1{
+    font-size: 60px;
+    margin-bottom: 60px;
+}
+
+#calc-home .buttons{
+    margin-top: 60px;
+}
+  
+#calc-home .buttons a{
+    display: inline-block;
+    margin: 15px 30px;
+    color: #f1f1f1;
+    background-color: #6a0dad;
+    font-size: 15px;
+    font-weight: 500;
+    width: 180px;
+    border: 1px solid #6a0dad;
+    padding: 14px 0;
+    border-radius: 6px;
+    transition: .2s linear;
+}
+
+#calc-body{
+    height: 90vh;
+    min-height: 500px;
+}
+
+#calc-body .inner-width{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+#calc-body h2{
+    text-align: center;
+    text-decoration: underline #6a0dad;
+    font-size: 30px;
+}
+
+#calc-body p{
+    text-align: center;
+    margin: auto;
+    font-size: 17px;
+    max-width: 700px;
+    padding: 20px 0;
+}
+
+#xmastree-home{
+    height: 100vh;
+    min-height: 500px;
+    background: url(/images/Projects-Tree/Xmas-Tree-PCB.png) no-repeat center;
+    background-size: cover;
+    background-attachment: scroll;
+}
+  
+#xmastree-home .inner-width{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+  
+#xmastree-home .content{
+    width: 100%;
+    color: #fff;
+}
+
+#xmastree-home .content h1{
+    font-size: 60px;
+    margin-bottom: 60px;
+}
+
+#xmastree-home .buttons{
+    margin-top: 60px;
+}
+  
+#xmastree-home .buttons a{
+    display: inline-block;
+    margin: 15px 30px;
+    color: #f1f1f1;
+    background-color: #6a0dad;
+    font-size: 15px;
+    font-weight: 500;
+    width: 180px;
+    border: 1px solid #6a0dad;
+    padding: 14px 0;
+    border-radius: 6px;
+    transition: .2s linear;
+}
+
+#xmastree-body{
+    height: 140vh;
+    min-height: 500px;
+}
+
+#xmastree-body .inner-width{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+#xmastree-body h2{
+    text-align: center;
+    text-decoration: underline #6a0dad;
+    font-size: 30px;
+}
+
+#xmastree-body p{
+    text-align: center;
+    margin: auto;
+    font-size: 17px;
+    max-width: 700px;
+    padding: 20px 0;
 }
 
 .row {
