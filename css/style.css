@@ -20,6 +20,8 @@
   top: 0;
   z-index: 999;
   transition: .3s linear;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }
 
 .glide__slide img{
@@ -368,6 +370,77 @@
 }
 
 #xmastree-body p{
+    text-align: center;
+    margin: auto;
+    font-size: 17px;
+    max-width: 700px;
+    padding: 20px 0;
+}
+
+#flappybird-home{
+    height: 100vh;
+    min-height: 500px;
+    background: url(/images/Projects-FlappyBird/Flappy-Bird.png) no-repeat center;
+    background-size: cover;
+    background-attachment: scroll;
+}
+  
+#flappybird-home .inner-width{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+  
+#flappybird-home .content{
+    width: 100%;
+    color: #fff;
+}
+
+#flappybird-home .content h1{
+    font-size: 60px;
+    margin-bottom: 60px;
+}
+
+#flappybird-home .buttons{
+    margin-top: 60px;
+}
+  
+#flappybird-home .buttons a{
+    display: inline-block;
+    margin: 15px 30px;
+    color: #f1f1f1;
+    background-color: #6a0dad;
+    font-size: 15px;
+    font-weight: 500;
+    width: 180px;
+    border: 1px solid #6a0dad;
+    padding: 14px 0;
+    border-radius: 6px;
+    transition: .2s linear;
+}
+
+#flappybird-body{
+    height: 90vh;
+    min-height: 500px;
+}
+
+#flappybird-body .inner-width{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+#flappybird-body h2{
+    text-align: center;
+    text-decoration: underline #6a0dad;
+    font-size: 30px;
+}
+
+#flappybird-body p{
     text-align: center;
     margin: auto;
     font-size: 17px;
