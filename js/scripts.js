@@ -17,21 +17,22 @@ $(document).ready(function(){
     gallery:{enabled:true}
   });
 
-  new Glide(".images", {
-      type: "carousel",
-      perView: 3,
-      gap: 10,
-      autoplay: 1,
-      animationDuration: 15000,
-      animationTimingFunc: 'linear',
-      breakpoints: {
-          1200:{
-              perView: 3
-          },
-          800:{
-              perview: 1
-          }
-      }
-  }).mount();
-});
+//   new Glide(".images", {
+//       type: "carousel",
+//       perView: 3,
+//       gap: 10,
+//       autoplay: 1,
+//       variableWidth: true,
+//       animationDuration: 15000,
+//       animationTimingFunc: 'linear',
+//       breakpoints: {
+//           1200:{
+//               perView: 3
+//           },
+//           800:{
+//               perview: 1
+//           }
+//       }
+//   }).mount();
+// });
 
