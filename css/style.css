@@ -105,7 +105,7 @@
 #home{
   height: 100vh;
   min-height: 500px;
-  background: url(../images/bg.jpg) no-repeat center;
+  background: url(/images/bg.jpg) no-repeat center;
   background-size: cover;
   background-attachment: scroll;
   image-rendering: optimizeSpeed;
@@ -191,7 +191,7 @@
 }
 
 #r2-body{
-    height: 140vh;
+    height: 270vh;
     min-height: 500px;
 }
 
@@ -235,10 +235,28 @@
     height: 100%;
 }
 
+#r2-body .img-container{
+    position: relative;
+    width: 90%;
+    padding-top: 30%;
+    margin: auto;
+}
+
+.image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #calc-home{
     height: 100vh;
     min-height: 500px;
-    background: url(../images/Projects-Calc/GUI-Calc.png) no-repeat center;
+    background: url(/images/Projects-Calc/GUI-Calc.png) no-repeat center;
     background-size: cover;
     background-attachment: scroll;
 }
@@ -309,7 +327,7 @@
 #xmastree-home{
     height: 100vh;
     min-height: 500px;
-    background: url(../images/Projects-Tree/Xmas-Tree-PCB.png) no-repeat center;
+    background: url(/images/Projects-Tree/Xmas-Tree-PCB.png) no-repeat center;
     background-size: cover;
     background-attachment: scroll;
 }
@@ -380,7 +398,7 @@
 #flappybird-home{
     height: 100vh;
     min-height: 500px;
-    background: url(../images/Projects-FlappyBird/Flappy-Bird.png) no-repeat center;
+    background: url(/images/Projects-FlappyBird/Flappy-Bird.png) no-repeat center;
     background-size: cover;
     background-attachment: scroll;
 }
