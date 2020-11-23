@@ -238,7 +238,7 @@
 #calc-home{
     height: 100vh;
     min-height: 500px;
-    background: url(/images/Projects-Calc/GUI-Calc.png) no-repeat center;
+    background: url(../images/Projects-Calc/GUI-Calc.png) no-repeat center;
     background-size: cover;
     background-attachment: scroll;
 }
@@ -309,7 +309,7 @@
 #xmastree-home{
     height: 100vh;
     min-height: 500px;
-    background: url(/images/Projects-Tree/Xmas-Tree-PCB.png) no-repeat center;
+    background: url(../images/Projects-Tree/Xmas-Tree-PCB.png) no-repeat center;
     background-size: cover;
     background-attachment: scroll;
 }
@@ -380,7 +380,7 @@
 #flappybird-home{
     height: 100vh;
     min-height: 500px;
-    background: url(/images/Projects-FlappyBird/Flappy-Bird.png) no-repeat center;
+    background: url(../images/Projects-FlappyBird/Flappy-Bird.png) no-repeat center;
     background-size: cover;
     background-attachment: scroll;
 }
