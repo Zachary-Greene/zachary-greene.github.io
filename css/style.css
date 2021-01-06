@@ -496,6 +496,108 @@ section{
     padding: 20px 0;
 }
 
+#notes-home{
+    height: 100vh;
+    min-height: 500px;
+    background: url(/images/Projects-Notes/notes-dark.png) no-repeat center;
+    background-size: cover;
+    background-attachment: scroll;
+}
+  
+#notes-home .inner-width{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+  
+#notes-home .content{
+    width: 100%;
+    color: #fff;
+}
+
+#notes-home .content h1{
+    font-size: 60px;
+    margin-bottom: 60px;
+}
+
+#xmastree-home .buttons{
+    margin-top: 60px;
+}
+  
+#notes-home .buttons a{
+    display: inline-block;
+    margin: 15px 30px;
+    color: #f1f1f1;
+    background-color: #6a0dad;
+    font-size: 15px;
+    font-weight: 500;
+    width: 180px;
+    border: 1px solid #6a0dad;
+    padding: 14px 0;
+    border-radius: 6px;
+    transition: .2s linear;
+}
+
+#notes-body{
+    height: 180vh;
+    min-height: 500px;
+}
+
+#notes-body .inner-width{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+#notes-body h2{
+    text-align: center;
+    text-decoration: underline #6a0dad;
+    font-size: 30px;
+}
+
+#notes-body p{
+    text-align: center;
+    margin: auto;
+    font-size: 17px;
+    max-width: 700px;
+    padding: 20px 0;
+}
+
+#notes-body ul{
+    text-align: center;
+    margin-top: -10px;
+}
+
+#notes-body .img-container{
+    position: relative;
+    width: 75%;
+    padding-top: 30%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 1000px) {
+    #notes-body{
+        max-height: 170vh;
+    }
+}
+
+@media screen and  (max-width: 850px) {
+    #notes-body{
+        max-height: 140vh;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #notes-body{
+        max-height: 130vh;
+    }
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -785,7 +887,7 @@ section.dark .section-title::after{
 }
 
 .contact-info .item{
-  width: calc(33% - 20px);
+  width: calc(50% - 20px);
   height: 160px;
   background-color: #353b48;
   color: #fff;
