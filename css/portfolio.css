@@ -1,3 +1,5 @@
+/* Overall Classes */
+
 * {
     margin: 0;
     padding: 0;
@@ -26,6 +28,12 @@ html {
     padding: 0 40px;
     background-color: transparent;
 }
+
+
+/* Overall Classes End */
+
+
+/* Navbar Classes */
 
 .navbar {
     position: fixed;
@@ -93,42 +101,105 @@ html {
 
 .navbar-menu a:hover {
     color: #6a0dad !important;
+    animation: jump 0.3s linear;
 }
+
+.sticky {
+    background-color: #dedede;
+    color: #000000;
+    padding: 18px 0;
+}
+
+.sticky .navbar-title {
+    color: #000000;
+}
+
+.sticky .navbar-menu {
+    color: #000000;
+}
+
+.sticky .navbar-menu a {
+    color: #000000;
+}
+
+.sticky .menu-toggler span {
+    background-color: #000000;
+}
+
+
+/* Navbar Classes End */
+
+
+/* General Section Classes */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 80px;
+    position: relative;
+    font-size: 26px;
+    padding-bottom: 20px;
+    padding-top: 150px;
+    color: #fff;
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background-color: #000;
+    bottom: 0;
+    left: calc(50% - 40px);
+}
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 10px;
+    background-color: #6a0dad;
+    border: 4px solid #353b48;
+    left: calc(50% - 12px);
+    bottom: -7px;
+}
+
+
+/* General Section Classes End */
+
+
+/* Intro Paragraph Classes */
 
 .intro {
     position: relative;
     max-width: 400px;
-    padding-top: 125px;
     padding-bottom: 75px;
     color: #fff;
     margin: auto;
     text-align: center;
 }
 
-.intro h1 {
-    padding-bottom: 20px;
-    font-weight: lighter;
-    font-style: italic;
-    font-size: 26px;
-    text-decoration: #6a0dad underline;
-}
-
 .intro p {
     font-size: 18px;
 }
+
+
+/* Intro Paragraph Classes End */
+
+
+/* Project Classes */
 
 .row {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
 }
-  
+
 .column {
     flex: 25%;
     max-width: 50%;
     padding: 0 4px;
 }
-  
+
 .column img {
     margin-top: 8px;
     vertical-align: middle;
@@ -141,7 +212,27 @@ html {
     transform: scale(1.1);
 }
 
-footer{
+@media screen and (max-width: 1600px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+/* Project Classes End */
+
+
+/* Footer Classes */
+
+footer {
     background: url(../images/bg.jpg) no-repeat center;
     color: #ffffff;
     padding: 80px 0;
@@ -151,31 +242,88 @@ footer{
 .sm {
     background-color: transparent;
 }
-  
-.sm a{
+
+.sm a {
     color: #ffffff;
     font-size: 22px;
     margin: 0 10px;
     transition: .2s linear;
 }
-    
-.sm a:hover{
+
+.sm a:hover {
     color: #6a0dad;
 }
-  
-.copyright{
+
+.copyright {
     margin-bottom: 20px;
     font-size: 15px;
     background-color: transparent;
 }
-  
-.copyright a{
+
+.copyright a {
     font-size: 16px;
     color: #6a0dad;
     font-weight: 500;
 }
 
+
+/* Footer Classes End */
+
+@media screen and (max-width: 980px) {
+    .menu-toggler {
+        display: block;
+    }
+    .navbar-menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-color: #353b48;
+        top: 0;
+        right: -100%;
+        max-width: 400px;
+        padding: 80px 50px;
+        transition: .2s linear;
+    }
+    .navbar-menu a {
+        display: block;
+        font-size: 30px;
+        margin: 30px 0;
+    }
+    .sticky .navbar-menu {
+        background-color: #dedede;
+        color: #000000;
+    }
+    .sticky .navbar-menu a {
+        color: #000000;
+    }
+    .navbar-menu.active {
+        right: 0;
+    }
+    .menu-toggler.active span:nth-child(1) {
+        transform: rotate(-45deg);
+        top: 4px;
+    }
+    .menu-toggler.active span:nth-child(2) {
+        opacity: 0;
+    }
+    .menu-toggler.active span:nth-child(3) {
+        transform: rotate(45deg);
+        bottom: 14px;
+    }
+    .inner-width {
+        max-width: 800px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .inner-width {
+        padding: 0 20px;
+    }
+}
+
+
 /* Animations */
+
 @keyframes jump {
     50% {
         transform: translateY(-10px);
