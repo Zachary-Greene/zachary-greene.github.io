@@ -6,7 +6,6 @@
     text-decoration: none;
     font-family: "Ubuntu", sans-serif;
     box-sizing: border-box;
-    background-color: #353b48;
 }
 
 html {
@@ -15,7 +14,7 @@ html {
 
 ::-webkit-scrollbar {
     width: 15px;
-    background-color: #ffffff;
+    background-color: #fff;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -26,7 +25,6 @@ html {
     max-width: 1300px;
     margin: auto;
     padding: 0 40px;
-    background-color: transparent;
 }
 
 
@@ -58,7 +56,6 @@ html {
     font-size: x-large;
     font-weight: bold;
     color: #fff;
-    background-color: transparent;
 }
 
 .navbar-title:hover {
@@ -86,16 +83,11 @@ html {
     transition: .3s linear;
 }
 
-.navbar-menu {
-    background-color: transparent;
-}
-
 .navbar-menu a {
     color: #fff;
     font-size: 15px;
     font-weight: 500;
     margin-left: 30px;
-    background-color: transparent;
     transition: .2s linear;
 }
 
@@ -208,10 +200,6 @@ html {
     transition: .2s linear;
 }
 
-.column img:hover {
-    transform: scale(1.1);
-}
-
 @media screen and (max-width: 1600px) {
     .column {
         flex: 50%;
@@ -226,6 +214,54 @@ html {
     }
 }
 
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color: #6a0dad88;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.container:hover .overlay {
+    width: 100%;
+    left: 0;
+}
+
+.text {
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    padding: 20px;
+}
+
+.text h2 {
+    padding-bottom: 10px;
+}
+
+.text p {
+    padding-top: 10px;
+}
+
+.break span {
+    display: block;
+    background-color: #fff;
+    height: 3px;
+}
 
 /* Project Classes End */
 
@@ -243,14 +279,12 @@ footer {
     display: inline-flex;
     margin: 0 10px;
     transition: .2s linear;
-    background-color: transparent;
 }
 
 .sm a {
     color: #6a0dad;
     font-size: 30px;
     margin: 20px 0;
-    background-color: transparent;
     transition: .2s linear;
 }
 
@@ -258,33 +292,21 @@ footer {
     transform: scale(1.1);
 }
 
-.smGroup {
-    background-color: transparent;
-}
-
 .copyright {
     font-size: 15px;
     text-align: left;
-    background-color: transparent;
 }
 
 b {
     color: #fff;
-    background-color: transparent;
 }
 
 h2 {
     padding-bottom: 10px;
-    background-color: transparent;
-}
-
-p, a {
-    background-color: transparent;
 }
 
 .footerEnd {
     padding-bottom: 20px;
-    background-color: transparent;
 }
 
 .emailLink {
@@ -294,13 +316,11 @@ p, a {
     border-bottom: #6a0dad solid;
     padding: 0 10px;
     cursor: pointer;
-    background-color: transparent;
     transition: .2s linear;
 }
 
 .emailLink p {
     padding-left: 20px;
-    background-color: transparent;
 }
 
 .emailLink:hover {
