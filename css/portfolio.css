@@ -243,7 +243,7 @@ html {
 }
 
 .text {
-    color: #fff;
+    color: #e3e3e3;
     font-size: 20px;
     position: absolute;
     padding: 20px;
@@ -259,7 +259,7 @@ html {
 
 .break span {
     display: block;
-    background-color: #fff;
+    background-color: #e3e3e3;
     height: 3px;
 }
 
