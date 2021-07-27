@@ -437,7 +437,7 @@ section.dark .section-title::after {
     font-size: 17px;
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1700px) {
     .column {
         flex: 50%;
         max-width: 50%;
@@ -500,37 +500,66 @@ section.dark .section-title::after {
 /* Contact Section Classes End */
 
 
-/* Footer Classes */
+/* Footer Start*/
 
 footer {
-    background: url(../images/bg.jpg) no-repeat center;
-    color: #ffffff;
-    padding: 80px 0;
+    background-color: #000;
+    color: #fff;
+    padding: 60px 0;
     text-align: center;
 }
 
-.sm a {
-    color: #ffffff;
-    font-size: 22px;
+.sm {
+    display: inline-flex;
     margin: 0 10px;
     transition: .2s linear;
 }
 
-.sm a:hover {
+.sm a {
     color: #6a0dad;
+    font-size: 30px;
+    margin: 20px 0;
+    transition: .2s linear;
+}
+
+.sm a:hover {
+    transform: scale(1.1);
 }
 
 .copyright {
-    margin-bottom: 20px;
     font-size: 15px;
+    text-align: left;
 }
 
-.copyright a {
-    font-size: 16px;
-    color: #6a0dad;
-    font-weight: 500;
+b {
+    color: #fff;
 }
 
+h2 {
+    padding-bottom: 10px;
+}
+
+.footerEnd {
+    padding-bottom: 20px;
+}
+
+.emailLink {
+    display: inline-flex;
+    max-width: 300px;
+    margin: auto;
+    border-bottom: #6a0dad solid;
+    padding: 0 10px;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.emailLink p {
+    padding-left: 20px;
+}
+
+.emailLink:hover {
+    transform: scale(1.1);
+}
 
 /* Footer Classes End */
 

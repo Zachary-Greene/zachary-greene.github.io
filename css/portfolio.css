@@ -230,44 +230,85 @@ html {
 /* Project Classes End */
 
 
-/* Footer Classes */
+/* Footer Start*/
 
 footer {
-    background: url(../images/bg.jpg) no-repeat center;
-    color: #ffffff;
-    padding: 80px 0;
+    background-color: #000;
+    color: #fff;
+    padding: 60px 0;
     text-align: center;
 }
 
 .sm {
+    display: inline-flex;
+    margin: 0 10px;
+    transition: .2s linear;
     background-color: transparent;
 }
 
 .sm a {
-    color: #ffffff;
-    font-size: 22px;
-    margin: 0 10px;
+    color: #6a0dad;
+    font-size: 30px;
+    margin: 20px 0;
+    background-color: transparent;
     transition: .2s linear;
 }
 
 .sm a:hover {
-    color: #6a0dad;
+    transform: scale(1.1);
 }
 
-.copyright {
-    margin-bottom: 20px;
-    font-size: 15px;
+.smGroup {
     background-color: transparent;
 }
 
-.copyright a {
-    font-size: 16px;
-    color: #6a0dad;
-    font-weight: 500;
+.copyright {
+    font-size: 15px;
+    text-align: left;
+    background-color: transparent;
 }
 
+b {
+    color: #fff;
+    background-color: transparent;
+}
+
+h2 {
+    padding-bottom: 10px;
+    background-color: transparent;
+}
+
+p, a {
+    background-color: transparent;
+}
+
+.footerEnd {
+    padding-bottom: 20px;
+    background-color: transparent;
+}
+
+.emailLink {
+    display: inline-flex;
+    max-width: 300px;
+    margin: auto;
+    border-bottom: #6a0dad solid;
+    padding: 0 10px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: .2s linear;
+}
+
+.emailLink p {
+    padding-left: 20px;
+    background-color: transparent;
+}
+
+.emailLink:hover {
+    transform: scale(1.1);
+}
 
 /* Footer Classes End */
+
 
 @media screen and (max-width: 980px) {
     .menu-toggler {
